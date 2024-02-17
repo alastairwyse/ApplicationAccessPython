@@ -241,11 +241,11 @@ The available data elements in the AccessManager are designed to be flexible eno
 
 ### Generic Type Choices
 
-The types used for generics TUser, TGroup, TComponent, and TAccess must implement the relevant methods to allow them to be stored in Sets and used as keys in Dict classes (implementing \__eq__() and \__hash__()).
+The types used for generics TUser, TGroup, TComponent, and TAccess must implement the relevant methods to allow them to be stored in Sets and used as keys in Dict classes (implementing \_\_eq__() and \_\_hash__()).
 
 Using enums or custom classes for TComponent and TAccess is recommended as it permits better type checking before execution, however strings could be used if the components or access level values need to change at runtime (e.g. in a UI application where users are able to dynamically generate their own screens).
 
-For TUser and TGroup anything which uniquely identifies a user or a group is appropriate.  Since users and groups could be added any removed dynamically at runtime, strings are likely a better choice than enums, however model/data class representing the user or group could be used for a more sophisticated implementation (again, provided it implements \__eq__(), etc... as described above).
+For TUser and TGroup anything which uniquely identifies a user or a group is appropriate.  Since users and groups could be added any removed dynamically at runtime, strings are likely a better choice than enums, however model/data class representing the user or group could be used for a more sophisticated implementation (again, provided it implements \_\_eq__(), etc... as described above).
 
 ### has_access_to*() Method Implementation
 
