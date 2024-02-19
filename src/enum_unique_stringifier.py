@@ -16,7 +16,7 @@
 
 from enum import Enum
 from typing import TypeVar
-from UniqueStringifierBase import UniqueStringifierBase
+from unique_stringifier_base import UniqueStringifierBase
 
 TEnum = TypeVar('TEnum', bound=Enum)
 

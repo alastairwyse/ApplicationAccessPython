@@ -15,8 +15,8 @@
 #
 
 from typing import TypeVar, Generic
-from AccessManager import AccessManager
-from UniqueStringifierBase import UniqueStringifierBase
+from access_manager import AccessManager
+from unique_stringifier_base import UniqueStringifierBase
 
 TUser = TypeVar("TUser")
 TGroup = TypeVar("TGroup")

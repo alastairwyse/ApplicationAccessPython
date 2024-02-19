@@ -17,7 +17,7 @@
 from enum import Enum, auto
 import unittest
 
-from EnumUniqueStringifier import EnumUniqueStringifier
+from src.enum_unique_stringifier import EnumUniqueStringifier
 
 class AccessLevel(Enum):
     VIEW = auto()

@@ -14,15 +14,25 @@
 # limitations under the License.
 #
 
-from UniqueStringifierBase import UniqueStringifierBase
+import unittest
 
-class StringUniqueStringifier(UniqueStringifierBase[str]):
-    """An implementation of UniqueStringifierBase[T] for strings."""
+from src.string_unique_stringifier import StringUniqueStringifier
 
-    def to_string(self, input_object: str) -> str:
+class StringUniqueStringifierUnitTests(unittest.TestCase):
+    """Unit tests for the StringUniqueStringifier class."""
 
-        return input_object
+    def setUp(self):
+        self._test_string_unique_stringifier = StringUniqueStringifier()
 
-    def from_string(self, stringified_object: str) -> str:
+    def test_to_string(self):
+        result: str = self._test_string_unique_stringifier.to_string("ABC")
 
-        return stringified_object
+        self.assertEqual("ABC", result)
+
+    def test_from_string(self):
+        result: str = self._test_string_unique_stringifier.from_string("ABC")
+
+        self.assertEqual("ABC", result)
+
+if __name__ == "__main__":
+    unittest.main()

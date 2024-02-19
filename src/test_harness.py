@@ -1,6 +1,6 @@
 from enum import Enum, auto
 from typing import List
-from AccessManager import AccessManager
+from access_manager import AccessManager
 
 class ApplicationScreen(Enum):
     ORDER = auto()

@@ -18,7 +18,7 @@ from typing import Set, Dict
 from enum import Enum, auto
 import unittest
 
-from AccessManager import AccessManager
+from src.access_manager import AccessManager
 
 class AccessManagerUnitTests(unittest.TestCase):
     """Unit tests for the AccessManager class."""
